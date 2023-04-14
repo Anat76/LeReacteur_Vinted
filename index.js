@@ -43,6 +43,7 @@ app.use(offerRoutes);
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Bienvenue sur ma Page d'acceuil" });
 });
+
 // route 404
 app.all("*", (req, res) => {
   res.status(404).json({ message: "This route doesn't exist" });
